@@ -23,7 +23,7 @@
             makeNavbarSticky() {
                 let navbar = document.getElementById('navbar')
                 let sticky = navbar.offsetTop
-                debugger
+
                 if (window.pageYOffset >= sticky) {
                     navbar.classList.add('sticky')
                 } else {
