@@ -19,6 +19,7 @@
 <script>
     export default {
         name: 'StickyNavbar',
+     
         methods: {
             makeNavbarSticky() {
                 let navbar = document.getElementById('navbar')
@@ -33,7 +34,10 @@
         },
         mounted() {
             this.makeNavbarSticky()
-        }
+        },
+        created () {
+            window.pageYOffset = 128;
+        },
     }
 </script>
 
