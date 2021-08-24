@@ -7,16 +7,12 @@
             <StickyNavbar />
             <CustomCarousels />
         </div>
-        <!-- <div id="nav">
-            <router-link to="/">Home</router-link> |
-            <router-link to="/about">About</router-link>
-        </div> -->
         <router-view />
     </div>
 </template>
 <script>
-    import CustomCarousels from './views/CustomCarousels/CustomCarousels'
-    import StickyNavbar from './views/StickyNavbar/StickyNavbar'
+    import CustomCarousels from './components/CustomCarousels/CustomCarousels'
+    import StickyNavbar from './components/StickyNavbar/StickyNavbar'
 
     export default {
         name: 'Home',
