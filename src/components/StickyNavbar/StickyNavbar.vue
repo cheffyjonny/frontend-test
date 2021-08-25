@@ -37,7 +37,7 @@
         },
         created () {
             //Giving fake value to triger makeNavbarSticky function.
-            window.pageYOffset = 128;
+            window.pageYOffset = 300;
         },
     }
 </script>
