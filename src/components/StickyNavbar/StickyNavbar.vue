@@ -24,6 +24,8 @@
             makeNavbarSticky() {
                 let navbar = document.getElementById('navbar')
                 let sticky = navbar.offsetTop
+                console.log(' navbar.offsetTop : ',sticky)
+                console.log('window.pageYOffset : ',window.pageYOffset)
 
                 if (window.pageYOffset >= sticky) {
                     navbar.classList.add('sticky')
@@ -36,8 +38,7 @@
             this.makeNavbarSticky()
         },
         created () {
-            //Giving fake value to triger makeNavbarSticky function.
-            window.pageYOffset = 300;
+            document.addEventListener('scroll', this.makeNavbarSticky)
         },
     }
 </script>
@@ -50,7 +51,7 @@
         border-bottom: 1px rgb(131, 131, 131) solid;
         background: #2e2e27;
         display: flex;
-        position: sticky;
+        /* position: sticky; */
         justify-content: center;
         align-items: center;
     }
@@ -80,7 +81,8 @@
         color: white;
     }
     .sticky {
-        position: fixed;
+        position: -webkit-sticky;
+        position: sticky;
         top: 0;
         width: 100%;
         z-index: 500001;

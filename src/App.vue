@@ -1,12 +1,10 @@
 <template>
     <div id="app">
-        <div class="top-banner">
-            <div class="top-banner-writing">
-                <h1>Wireframe</h1>
-            </div>
-            <StickyNavbar />
-            <CustomCarousels />
+        <div class="top-banner-writing">
+            <h1>Wireframe</h1>
         </div>
+        <StickyNavbar />
+        <CustomCarousels />
         <router-view />
     </div>
 </template>
@@ -28,6 +26,7 @@
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+ 
     }
     * {
         margin: 0;
